@@ -1,0 +1,102 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+.flex {
+	display: flex;
+}
+
+.justify-content-start {
+	justify-content: start;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-end {
+	justify-content: end;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-start {
+    align-items: start;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-end {
+    align-items: end;
+}
+
+.block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+.bold {
+    font-weight: bold;
+}
+.h1 {
+    font-size: 2.5rem;
+}
+.h2 {
+    font-size: 2.2rem;
+}
+.h3 {
+    font-size: 1.7rem;
+}
+.h4 {
+    font-size: 1.2rem
+}
+.h5 {
+    font-size: .7rem
+}
+.ps-5 {
+    padding-left: 5rem;
+}
+.ps-4 {
+    padding-left: 4rem;
+}
+.ps-3 {
+    padding-left: 3rem;
+}
+.ps-2 {
+    padding-left: 2rem;
+}
+.ps-1 {
+    padding-left: 1rem;
+}
+.pe-5 {
+    padding-right: 5rem;
+}
+.pe-4 {
+    padding-right: 4rem;
+}
+.pe-3 {
+    padding-right: 3rem;
+}
+.pe-2 {
+    padding-right: 2rem;
+}
+.pe-1 {
+    padding-right: 1rem;
+}
+.list-link {
+    list-style: none
+}
+th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
