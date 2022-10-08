@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cv - TI02 - Febry Billiyagi Karsidi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cutive Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div style="width: 350px; border-right: 1px solid #ddd; position: fixed; height: 100%;">
+        <div style="height: 68%;">
+            <img src="assets/img/profile.jpg" class="w-100 h-100 object-fit-cover" style="filter: grayscale(50%);" alt="">
+        </div>
+        <table style="height: 30%;">
+            <tr>
+                <th style="border-right: none;" class="bold">Nama</th>
+                <th style="border-right: none;">Febry Billiyagi Karsidi</th>
+            </tr>
+            <tr>
+                <th style="border-right: none;" class="bold">Panggilan</th>
+                <th style="border-right: none;">Billy</th>
+            </tr>
+            <tr>
+                <th style="border-right: none;" class="bold">Prodi</th>
+                <th style="border-right: none;">Teknik Informatika</th>
+            </tr>
+            <tr>
+                <th style="border-right: none;" class="bold">Kelas</th>
+                <th style="border-right: none;">TI 02</th>
+            </tr>
+        </table>
+    </div>
+    <div style="width: 75%; margin-left: 350px; padding: 1.5rem 3rem; line-height: 1.7rem;">
+        <div style="margin-bottom: 2rem;">
+            <h3 class="h3 bold" style="margin-bottom: 1rem;">Tentang</h3>
+            <p>Hai, saya Febry Billiyagi Saya seorang pengembang web dengan hasrat tinggi untuk mengembangkan ide menjadi kode yang dapat membantu banyak orang, dan selain coding dan belajar teknologi baru, saya juga menikmati bulu tangkis, membaca, minum teh, dan jogging.</p>
+        </div>
+        <div style="margin-bottom: 2rem;">
+            <h3 class="h3 bold" style="margin-bottom: 1rem;">Biodata</h3>
+            <table>
+                <tr>
+                    <th class="bold">Nama Lengkap</th>
+                    <th>Febry Billiyagi Karsidi</th>
+                </tr>
+                <tr>
+                    <th class="bold">Jenis Kelamin</th>
+                    <th>Laki - laki</th>
+                </tr>
+                <tr>
+                    <th class="bold">Tempat, Tanggal lahir</th>
+                    <th>Bogor, 19 Februari 2003</th>
+                </tr>
+                <tr>
+                    <th class="bold">Agama</th>
+                    <th>Islam</th>
+                </tr>
+                <tr>
+                    <th class="bold">Email</th>
+                    <th>febrybilliyagi72@gmail.com</th>
+                </tr>
+            </table>
+        </div>
+        <div style="margin-bottom: 2rem;">
+            <h3 class="h3 bold" style="margin-bottom: 1rem;">Pendidikan</h3>
+            <table>
+                <tr>
+                    <th class="bold">SD Nannggewer Mekar 04</th>
+                    <th>2009 - 2015</th>
+                </tr>
+                <tr>
+                    <th class="bold">MTS Amal Bhakti</th>
+                    <th>2015 - 2018</th>
+                </tr>
+                <tr>
+                    <th class="bold">SMK Putra Pakuan</th>
+                    <th>2018 - 2021</th>
+                </tr>
+                <tr>
+                    <th class="bold">STT Nurul Fikri</th>
+                    <th>2022 - 2026</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="flex justify-content-center">
+            <a href="https://www.linkedin.com/in/febry-billiyagi-karsidi/" style="background-color: #0E76A8; text-decoration: none; color: #fff; padding: 5px 10px;"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="https://instagram.com/billiyagi" style="background-color: #8134AF; text-decoration: none; color: #fff; padding: 5px 10px; margin: 0 15px;"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://github.com/billiyagi" style="background-color: black; text-decoration: none; color: #fff; padding: 5px 10px;"><i class="fab fa-github"></i> Github</a>
+        </div>
+    </div>
+</div>
+
+<div class="ask-console">
+    <div class="logo-console"><i class="fas fa-terminal"></i></div>
+    <div class="kata-console">Tampilkan konsol</div>
+</div>
+
+<div id="console" style="display: none;">
+    <div class="close flex align-items-center" style="color: #fff; cursor: pointer;" id="closeConsole"><span class="h2" style="margin-right: 5px;">&times;</span> Tutup</div>
+    <div class="output-console" style="color: #fff; padding: 0 25px;">
+        <ul style="list-style-type: '> '; padding-left: 15px; line-height: 1.8rem; overflow: auto; height: 240px;" id="outputMessage">
+        </ul>
+    </div>
+    <div class="console-typing w-100" style="position: absolute; bottom: 0; left: 0;">
+        <div class="flex align-items-center" style="padding: 0 40px;">
+            <p style="color: #FFF; margin-left: 5px; background-color: black;">></p>
+            <input type="text" class="w-100" style="background-color: black; color: #fff; padding: 18px; font-size: 17px; outline: none; border: none;" placeholder="Ketik perintah..." id="inputConsole">
+            <div class="flex">
+                <button style="border: none; padding: 5px 35px; font-size: 15px; background-color: #fff" id="submitConsole">Kirim</button>
+                <button style="border: none; padding: 5px 35px; font-size: 15px; background-color: #ddd" id="clearConsole">Reset</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/console.js"></script>
+</body>
+</html>
