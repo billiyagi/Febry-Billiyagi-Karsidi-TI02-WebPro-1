@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form 1</title>
+</head>
+<body>
+    <fieldset style="width: 50%; margin: 5rem auto">
+    <h3>Black Goose Bistro | Pizza-on-demand</h3>
+    <p>Our 12" woord-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour</p>
+    <form action="ordered.html">
+        <p>Your information</p>
+        <ul style="list-style: none; padding: 0; line-height: 1.9rem;">
+            <li>
+                Name: <input type="text" name="name">
+            </li>
+            <li>
+                Address: <input type="text" name="address">
+            </li>
+            <li>
+                Telephone Number: <input type="number" name="telephone">
+            </li>
+            <li>
+                Email: <input type="email" name="email">
+            </li>
+            <li>
+                <p>Delivery Instruction: </p>
+                <textarea name="instruction" cols="40" rows="4" placeholder="Delivery Instruction (Opsional)" maxlength="400"></textarea>
+            </li>
+            <li>
+                <strong>Design Your Dream Pizza:</strong>
+                <p style="margin-top: 0;">Pizza Specs</p>
+                <span>Crust (Choose One)</span>
+                <ul style="list-style: none; padding: 0;">
+                    <li>
+                        <input type="radio" name="crust" id="classic">
+                        <label for="classic">Classic White</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="crust" id="multigrain"> 
+                        <label for="multigrain">Multigrain</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="crust" id="stuffed"> 
+                        <label for="stuffed">Cheese-stuffed crust</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="crust" id="gluten"> 
+                        <label for="gluten">Gluten-free</label>
+                    </li>
+                </ul>
+                <p>Toppings (Choose as many as you want):</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li>
+                        <input type="checkbox" name="toppings[]" id="redSauce" checked>
+                        <label for="redSauce">Red Sauce</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="toppings[]" id="whiteSauce">
+                        <label for="whiteSauce">White Sauce</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="toppings[]" id="mozzarella">
+                        <label for="mozzarella">Mozzarella Cheese</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="toppings[]" id="papperoni">
+                        <label for="papperoni">Papperoni</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="toppings[]" id="mushrooms">
+                        <label for="mushrooms">Mushrooms</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="toppings[]" id="peppers">
+                        <label for="peppers">Peppers</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="toppings[]" id="anchovies">
+                        <label for="anchovies">Anchovies</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div style="margin-top: 1rem;">Number</div>
+                <label for="total">How many pizzas:</label> <input type="number" name="total" id="total" style="width: 35px;" value="1">
+            </li>
+            <li>
+                <div style="margin-top: 2rem">
+                    <button type="submit">Bring me pizza!</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </li>
+        </ul>
+    </form>
+    </fieldset>
+</body>
+</html>
