@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pesanan barang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+        .btn {
+            border: 1px solid #ddd;
+            padding: 5px 15px;
+            font-size: medium;
+            cursor: pointer;
+        }
+        .form-input {
+            border: 1px solid #ddd;
+            width: 100%;
+            outline: none;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <section style="margin: 2rem;">
+        <nav style="width: 100%; display: flex; justify-content: space-evenly; border: 1px solid #ddd; margin-bottom: 40px;">
+            <a href="" style="text-decoration: none; border-right: 1px solid #ddd; padding: 10px 20px; width: 100%; text-align: center;">Home</a>
+            <a href=""  style="text-decoration: none; border-right: 1px solid #ddd; padding: 10px 20px; width: 100%; text-align: center;">Register</a>
+            <a href=""  style="text-decoration: none; border-right: 1px solid #ddd; padding: 10px 20px; width: 100%; text-align: center;">Policy</a>
+            <a href=""  style="text-decoration: none; border-right: 1px solid #ddd; padding: 10px 20px; width: 100%; text-align: center;">About</a>
+        </nav>
+        <div style="display: flex;">
+            <div style="flex: 25%; margin-right: 50px;">
+                <img src="roket.png" alt="roket" style="width: 100%; height: 250px; object-fit: cover;">
+            </div>
+            <form action="generate.php" method="post" style="flex: 75%;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="flex: 30%;">
+                        <label for="title">Title Here :</label>
+                    </div>
+                    <div style="flex: 70%;">
+                        Macbook Air $800
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="flex: 30%;">
+                        <label for="description">Description :</label>
+                    </div>
+                    <div style="flex: 70%;">
+                        <ul style="list-style: none; padding: 0; line-height: 1.7rem">
+                            <li>Year: 2009</li>
+                            <li>Model: </li>
+                            <li>Condition: Mint</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="flex: 30%;">
+                        <label for="accnum">Total Amount :</label>
+                    </div>
+                    <div style="flex: 70%;">
+                        $800
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="flex: 30%;">
+                        <label for="accnum">Pay to :</label>
+                    </div>
+                    <div style="flex: 70%;">
+                        123-456-789-0
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="flex: 30%;">
+                        <label for="payment">Payment Type :</label>
+                    </div>
+                    <div style="flex: 70%;">
+                        <select name="payment" id="payment" class="form-input" disabled>
+                            <option selected>Visa Debit</option>
+                            <optgroup label="Nasional">
+                                <option value="bri">BRI</option>
+                                <option value="bni">BNI</option>
+                                <option value="mandiri">Mandiri</option>
+                            </optgroup>
+                            <optgroup label="International">
+                                <option value="hsbc">HSBC</option>
+                                <option value="bca">BCA</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="flex: 30%;">
+                        <label for="accholder">Account Holder :</label>
+                    </div>
+                    <div style="flex: 70%;">
+                        <input type="text" name="accholder" id="accholder" class="form-input" value="Febry Billiyagi Karsidi" disabled>
+                    </div>
+                </div>
+
+
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="flex: 30%;">
+                        <label for="accno">Account No :</label>
+                    </div>
+                    <div style="flex: 70%;">
+                        <input type="text" name="accno" id="accno" class="form-input" value="123-456-789-0" disabled>
+
+                        <div style="margin-top: 15px; color: #03af14;">
+                            <div>
+                                <input type="checkbox" name="send_mobile" id="sendMobile" checked disabled>
+                                <label for="sendMobile">Send to Mobile Phone</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="send_email" id="sendEmail" checked disabled>
+                                <label for="sendEmail">Send to Email</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="flex: 30%;">
+                        <label for="mphone">Send to Mobile Phone :</label>
+                    </div>
+                    <div style="flex: 70%;">
+                        <input type="text" name="mphone" id="mphone" class="form-input" value="1234567890, 1234567891" disabled>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="flex: 30%;">
+                        <label for="mail">Send to Email :</label>
+                    </div>
+                    <div style="flex: 70%;">
+                        <input type="email" name="mail" id="mail" class="form-input" value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com" disabled>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn" style="background-color: #03af14; color: #FFF;margin-left: 17rem; margin-top: 2.5rem; border-radius: 5px; border: none;">Pay using QuidLink</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
