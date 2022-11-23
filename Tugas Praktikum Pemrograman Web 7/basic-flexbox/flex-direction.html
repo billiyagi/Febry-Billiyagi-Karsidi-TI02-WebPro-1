@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .container-2 {
+            display: flex;
+            flex-direction: column;
+        }
+        .container-3 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .container-4 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .kotak {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ddd;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Flex Direction - Row</h3>
+    <div class="container">
+        <div class="kotak item-1">1</div>
+        <div class="kotak item-2">2</div>
+        <div class="kotak item-3">3</div>
+        <div class="kotak item-4">4</div>
+        <div class="kotak item-5">5</div>
+    </div>
+
+    <h3>Flex Direction - Column</h3>
+    <div class="container-2">
+        <div class="kotak item-1">1</div>
+        <div class="kotak item-2">2</div>
+        <div class="kotak item-3">3</div>
+        <div class="kotak item-4">4</div>
+        <div class="kotak item-5">5</div>
+    </div>
+
+    <h3>Flex Direction - Row Reverse</h3>
+    <div class="container-3">
+        <div class="kotak item-1">1</div>
+        <div class="kotak item-2">2</div>
+        <div class="kotak item-3">3</div>
+        <div class="kotak item-4">4</div>
+        <div class="kotak item-5">5</div>
+    </div>
+
+    <h3>Flex Direction - Column Reverse</h3>
+    <div class="container-4">
+        <div class="kotak item-1">1</div>
+        <div class="kotak item-2">2</div>
+        <div class="kotak item-3">3</div>
+        <div class="kotak item-4">4</div>
+        <div class="kotak item-5">5</div>
+    </div>
+</body>
+</html>

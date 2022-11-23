@@ -1,0 +1,221 @@
+/* Reset margin dan padding pada tag body */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 5rem;
+}
+
+/* tag nav berperan sebagai flex container */
+nav{
+    /* Syarat untuk menggunakan flexbox */
+    display: flex;
+
+    /* Memberikan space horizontal diantara tag img dengan tag ul */
+    justify-content: space-between; 
+
+    background-color: #7BF6D4;
+    padding: 0.5rem;
+}/* Reset margin dan padding pada tag body */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 5rem;
+}
+
+/* tag nav berperan sebagai flex container */
+nav{
+    /* Syarat untuk menggunakan flexbox */
+    display: flex;
+
+    /* Memberikan space horizontal diantara tag img dengan tag ul */
+    justify-content: space-between; 
+
+    background-color: #7BF6D4;
+    padding: 0.5rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center; /* Memusatkan secara vertikal */
+}
+
+nav ul li{
+    margin: 0 1rem;
+}/* Reset margin dan padding pada tag body */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 5rem;
+}
+
+/* tag nav berperan sebagai flex container */
+nav{
+    /* Syarat untuk menggunakan flexbox */
+    display: flex;
+
+    /* Memberikan space horizontal diantara tag img dengan tag ul */
+    justify-content: space-between; 
+
+    background-color: #7BF6D4;
+    padding: 0.5rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center; /* Memusatkan secara vertikal */
+}
+
+nav ul li{
+    margin: 0 1rem;
+}/* Reset margin dan padding pada tag body */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 5rem;
+}
+
+/* tag nav berperan sebagai flex container */
+nav{
+    /* Syarat untuk menggunakan flexbox */
+    display: flex;
+
+    /* Memberikan space horizontal diantara tag img dengan tag ul */
+    justify-content: space-between; 
+
+    background-color: #7BF6D4;
+    padding: 0.5rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center; /* Memusatkan secara vertikal */
+}
+
+nav ul li{
+    margin: 0 1rem;
+}/* Reset margin dan padding pada tag body */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 5rem;
+}
+
+/* tag nav berperan sebagai flex container */
+nav{
+    /* Syarat untuk menggunakan flexbox */
+    display: flex;
+
+    /* Memberikan space horizontal diantara tag img dengan tag ul */
+    justify-content: space-between; 
+
+    background-color: #7BF6D4;
+    padding: 0.5rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center; /* Memusatkan secara vertikal */
+}
+
+nav ul li{
+    margin: 0 1rem;
+}/* Reset margin dan padding pada tag body */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 5rem;
+}
+
+/* tag nav berperan sebagai flex container */
+nav{
+    /* Syarat untuk menggunakan flexbox */
+    display: flex;
+
+    /* Memberikan space horizontal diantara tag img dengan tag ul */
+    justify-content: space-between; 
+
+    background-color: #7BF6D4;
+    padding: 0.5rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center; /* Memusatkan secara vertikal */
+}
+
+nav ul li{
+    margin: 0 1rem;
+}/* Reset margin dan padding pada tag body */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 5rem;
+}
+
+/* tag nav berperan sebagai flex container */
+nav{
+    /* Syarat untuk menggunakan flexbox */
+    display: flex;
+
+    /* Memberikan space horizontal diantara tag img dengan tag ul */
+    justify-content: space-between; 
+
+    background-color: #7BF6D4;
+    padding: 0.5rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center; /* Memusatkan secara vertikal */
+}
+
+nav ul li{
+    margin: 0 1rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center; /* Memusatkan secara vertikal */
+}
+
+nav ul li{
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid salmon;
+    color: #FFF;
+}
