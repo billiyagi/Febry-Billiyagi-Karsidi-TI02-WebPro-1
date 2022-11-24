@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo/bg-logo-primary.png" type="image/x-icon">
+    <!-- Primary Meta Tags -->
+    <title>Apotik Farma - Melayani dengan Tulus</title>
+    <meta name="title" content="Apotik Farma - Melayani dengan Tulus">
+    <meta name="description"
+        content="Kami adalah satu-satunya apotik, yang menyediakan berbagai macam obat-obatan yang terverifikasi aman oleh BPOM dan sudah tersebar luas di seluruh indonesia.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Apotik Farma - Melayani dengan Tulus">
+    <meta property="og:description"
+        content="Kami adalah satu-satunya apotik, yang menyediakan berbagai macam obat-obatan yang terverifikasi aman oleh BPOM dan sudah tersebar luas di seluruh indonesia.">
+    <meta property="og:image" content="assets/img/bg-hero.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Apotik Farma - Melayani dengan Tulus">
+    <meta property="twitter:description"
+        content="Kami adalah satu-satunya apotik, yang menyediakan berbagai macam obat-obatan yang terverifikasi aman oleh BPOM dan sudah tersebar luas di seluruh indonesia.">
+    <meta property="twitter:image" content="assets/img/bg-hero.jpg">
+</head>
+
+<body>
+    <input type="checkbox" id="welcomeModal" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box relative">
+            <label for="welcomeModal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+            <h3 class="text-lg font-bold">Hi, Selamat Datang!</h3>
+            <p class="py-4"> Selamat datang di website Apotik Farma, Website ini adalah hasil praktikum tugas saya pada
+                mata kuliah <em>Pemrograman Web</em>.</p>
+            <div class="flex justify-end">
+                <em class="text-center font-semibold">~ Febry Billiyagi</em>
+            </div>
+        </div>
+    </div>
+    <!-- Header such as logo & Navigation -->
+    <header
+        class="group navbar px-4 md:px-20 bg-transparent hover:bg-white hover:transition-all fixed top-0 left-0 z-50 font-['Open_Sans']">
+        <div class="flex-1">
+            <a href="#" class="normal-case text-xl text-white group-hover:text-black font-bold flex items-center">
+                <img src="assets/img/logo/logo-primary.png" alt="Logo Apotik Farma" class="w-14">
+                <span class="ml-3">Apotik Farma</span>
+            </a>
+        </div>
+        <!-- Menu on desktop -->
+        <nav class="flex-none hidden md:block">
+            <ul class="menu menu-horizontal p-0 ">
+                <li>
+                    <a class="text-white group-hover:text-black">Beranda</a>
+                </li>
+                <li>
+                    <a class="text-white group-hover:text-black">Belanja</a>
+                </li>
+                <li>
+                    <a class="text-white group-hover:text-black">Tentang</a>
+                </li>
+                <li>
+                    <a class="text-white group-hover:text-black">Kontak</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Menu on mobile -->
+        <div class="block md:hidden">
+            <label class="btn btn-ghost swap swap-rotate text-white group-hover:text-black" id="btnHumberger">
+                <!-- this hidden checkbox controls the state -->
+                <input type="checkbox" />
+                <!-- hamburger icon -->
+                <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 512 512">
+                    <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                </svg>
+                <!-- close icon -->
+                <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 512 512">
+                    <polygon
+                        points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                </svg>
+            </label>
+        </div>
+        <div class="absolute w-full px-4 top-20 left-0 hidden" id="menuHumberger">
+            <ul class="menu w-full bg-base-100 rounded-box shadow-lg">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Belanja</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Main Contents -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero h-[36rem]" style="background-image: url(assets/img/bg-hero.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-lg">
+                    <h1 class="mb-5 text-4xl md:text-6xl font-bold">Apotik Farma</h1>
+                    <p class="mb-5 text-lg md:text-xl">Apotik terlengkap dan bersejarah di indonesia, dengan layanan
+                        yang prima dan obat-obatan yang berkualitas internasional.</p>
+                    <button class="btn bg-blue-500 hover:bg-blue-600 border-none">Selengkapnya</button>
+                </div>
+            </div>
+        </section>
+        <!-- Introduction -->
+        <section class="hero h-auto md:h-[35rem] bg-white px-2 md:px-20 mt-10 md:mt-0 mb-20 md:mb-0">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <iframe class="rounded-lg shadow-2xl order-2 md:order-1" width="100%" height="315"
+                    src="https://www.youtube.com/embed/IvFMmjldI20" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="pr-0 md:pr-16 order-1 md:order-2">
+                    <h1 class="text-2xl md:text-5xl font-bold leading-normal">Pertama dan Terlengkap di Indonesia</h1>
+                    <p class="py-6 text-lg">Kami adalah satu-satunya apotik, yang menyediakan berbagai macam obat-obatan
+                        yang terverifikasi aman oleh BPOM dan sudah tersebar luas di seluruh indonesia.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Apotik Data -->
+        <section class="hero h-auto md:h-[35rem] bg-white px-2 md:px-20 mb-20 md:mb-0">
+            <div class="hero-content flex-col lg:flex-row">
+                <!-- Table data -->
+                <div class="overflow-x-auto w-full md:w-2/5 shadow-lg order-2 md:order-1">
+                    <table class="table w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th>NO</th>
+                                <th>Provinsi</th>
+                                <th>Apotik</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- row 1 -->
+                            <tr>
+                                <th>1</th>
+                                <td>Jakarta</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Bogor</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Depok</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>Aceh</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td>Sumatera Barat</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="flex-1 w-full md:w-3/5 p-0 md:pl-16 order-1 md:order-2 mt-5 md:mt-0">
+                    <h1 class="text-2xl md:text-5xl font-bold leading-normal">Hadir di 34 Provinsi, dan Terus Berkembang
+                    </h1>
+                    <p class="py-6 text-lg">Kami adalah satu-satunya apotik, yang menyediakan berbagai macam obat-obatan
+                        yang terverifikasi aman oleh BPOM dan sudah tersebar luas di seluruh indonesia.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Keuntungan -->
+        <section class="hero bg-white px-2 md:px-20 mb-20 md:mb-20">
+            <div class="hero-content flex-col w-full">
+                <h1 class="text-2xl md:text-5xl font-bold leading-normal mb-14">Kenapa harus kami</h1>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
+                    <div class="group card bg-base-100 shadow-lg hover:bg-blue-500">
+                        <div class="card-body text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-14 h-14 m-auto group-hover:text-white text-blue-500">
+                                <path fill-rule="evenodd"
+                                    d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zM9.75 17.25a.75.75 0 00-1.5 0V18a.75.75 0 001.5 0v-.75zm2.25-3a.75.75 0 01.75.75v3a.75.75 0 01-1.5 0v-3a.75.75 0 01.75-.75zm3.75-1.5a.75.75 0 00-1.5 0V18a.75.75 0 001.5 0v-5.25z"
+                                    clip-rule="evenodd" />
+                                <path
+                                    d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z" />
+                            </svg>
+                            <p class="mt-5 text-lg group-hover:text-white font-semibold">Lengkap</p>
+                        </div>
+                    </div>
+                    <div class="group card bg-base-100 shadow-lg hover:bg-gray-500">
+                        <div class="card-body text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-14 h-14 m-auto text-gray-500 group-hover:text-white">
+                                <path fill-rule="evenodd"
+                                    d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p class="mt-5 font-semibold text-lg group-hover:text-white">Aman</p>
+                        </div>
+                    </div>
+                    <div class="group card bg-base-100 shadow-lg hover:bg-green-500">
+                        <div class="card-body text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-14 h-14 m-auto text-green-500 group-hover:text-white">
+                                <path fill-rule="evenodd"
+                                    d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625zM7.5 15a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 017.5 15zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H8.25z"
+                                    clip-rule="evenodd" />
+                                <path
+                                    d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
+                            </svg>
+                            <p class="mt-5 font-semibold text-lg group-hover:text-white">Terdaftar</p>
+                        </div>
+                    </div>
+                    <div class="group card bg-base-100 shadow-lg hover:bg-orange-500">
+                        <div class="card-body block m-auto text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-14 h-14 m-auto text-orange-500 group-hover:text-white">
+                                <path fill-rule="evenodd"
+                                    d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p class="mt-5 font-semibold text-lg group-hover:text-white">Mudah didapat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Article -->
+        <section class="hero bg-white px-2 md:px-20 mb-20">
+            <div class="hero-content flex-col w-full">
+                <h1 class="text-2xl md:text-5xl font-bold leading-normal mb-14">Artikel</h1>
+                <div class="flex flex-row justify-between w-full items-center border-b border-gray-200 pb-1">
+                    <div class="text-lg font-semibold">Terbaru</div>
+                    <span class="flex">
+                        <a href="#" class="pr-2">Lihat lebih</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-4 my-5">
+                    <a href="#" class="group card bg-base-100 shadow-xl">
+                        <figure><img src="assets/img/article-ginjal-akut.jpg" alt="Shoes"
+                                class="transition ease-in-out group-hover:scale-125" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title"> Perusahaan dibalik Kasus Gagal Ginjal Akut Anak </h2>
+                            <p class="opacity-80 text-sm">Pada 1 bulan yang lalu ramai tentang banyaknya kasus gagal..
+                            </p>
+                            <div class="card-actions justify-end mt-5">
+                                <div class="badge badge-outline">Obat</div>
+                                <div class="badge badge-outline">Berita</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="group card bg-base-100 shadow-xl">
+                        <figure><img src="assets/img/article-penyakit-mematikan.jpg" alt="Shoes"
+                                class="transition ease-in-out group-hover:scale-125" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title"> 4 Penyakit Mematikan yang Wajib diwaspadai </h2>
+                            <p class="opacity-80 text-sm">Suatu penyakit yang dapat menimbulkan gejala yang parah hingga
+                                kematian..</p>
+                            <div class="card-actions justify-end mt-5">
+                                <div class="badge badge-outline">Penyakit</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="group card bg-base-100 shadow-xl">
+                        <figure><img src="assets/img/article-obat-hipertensi.jpg" alt="Shoes"
+                                class="transition ease-in-out group-hover:scale-125" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title"> Obat hipertensi dapat diminum kapan saja </h2>
+                            <p class="opacity-80 text-sm">beberapa penderita sakit hipertensi atau darah tinggi mungkin
+                                bertanya tanya..</p>
+                            <div class="card-actions justify-end mt-5">
+                                <div class="badge badge-outline">Obat</div>
+                                <div class="badge badge-outline">Tips</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="group card bg-base-100 shadow-xl">
+                        <figure><img src="assets/img/article-who.jpg" alt="Shoes"
+                                class="transition ease-in-out group-hover:scale-125" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title"> WHO siap Umumkan Nama Baru Monkeypox </h2>
+                            <p class="opacity-80 text-sm">Setelah WHO mendapatkan tekanan dari AS akhirnya WHO akan..
+                            </p>
+                            <div class="card-actions justify-end mt-5">
+                                <div class="badge badge-outline">Penyakit</div>
+                                <div class="badge badge-outline">Berita</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section class="hero bg-white px-2 md:px-20 mb-36">
+            <div class="hero-content flex-col w-full">
+                <h1 class="text-2xl md:text-5xl font-bold leading-normal mb-10">Hubungi Kami</h1>
+                <form action="#" method="post" class="w-full">
+                    <div class="mx-auto w-full md:w-1/2">
+                        <div class="flex">
+                            <input type="text" placeholder="Nama Depan" class="input input-bordered w-1/2 mb-5 mr-4"
+                                required />
+                            <input type="text" placeholder="Nama Belakang" class="input input-bordered w-1/2 mb-5"
+                                required />
+                        </div>
+                        <input type="email" placeholder="Email" class="input input-bordered w-full mb-5" required />
+                        <textarea class="textarea textarea-bordered w-full mb-5" rows="5"
+                            placeholder="Ketik pesan"></textarea>
+                        <div class="flex justify-end">
+                            <button class="btn bg-blue-500 hover:bg-blue-600 border-none">Kirim pesan</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer p-10 bg-base-300 text-base-content">
+        <div>
+            <img src="assets/img/logo/logo-horizontal.png" alt="">
+        </div>
+        <div class="grid-cols-2 md:grid-cols-3 gap-5 w-full">
+            <div>
+                <span class="footer-title">Layanan</span>
+                <ul class="mt-3">
+                    <li>
+                        <a href="#" class="link link-hover">Obat BPJS</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link link-hover">Cek Keaslian Obat</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link link-hover">Beriklan pada kami</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span class="footer-title">Perusahaan</span>
+                <ul class="mt-3">
+                    <li>
+                        <a href="#" class="link link-hover">Tentang Kami</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link link-hover">Kontak</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link link-hover">Karir</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link link-hover">Standar Prosedur</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span class="footer-title">Sosial Media</span>
+                <div class="grid grid-flow-col gap-4 mt-3">
+                    <a href="#" class="hover:text-sky-500"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" class="fill-current">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                            </path>
+                        </svg></a>
+                    <a href="#" class="hover:text-red-500"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" class="fill-current">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                            </path>
+                        </svg></a>
+                    <a href="#" class="hover:text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" class="fill-current">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                            </path>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center py-3 bg-blue-500 text-white">Dibuat Oleh <a href="https://github.com/billiyagi"
+            class="font-semibold underline">Febry Billiyagi</a> dengan TailwindCSS dan JQuery</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
