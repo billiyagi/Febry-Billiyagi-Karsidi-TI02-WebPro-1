@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript 3</title>
+</head>
+
+<body>
+    <h2>Biaya Parkir</h2>
+    <form>
+        <label for="masuk">Jam masuk : </label><input type="text" id="masuk">
+        <br>
+        <label for="keluar">Jam keluar : </label><input type="text" id="keluar">
+        <br><br>
+        <button type="button" onclick="parkir()">Hitung</button>
+        <br><br>
+        <label for="biaya">Biaya : </label><input type="text" id="biaya" disabled>
+    </form>
+    <script>
+        const parkir = function () {
+            let jam_parkir = document.getElementById('masuk').value
+            let jam_keluar = document.getElementById('keluar').value
+            let lama_parkir = jam_keluar - jam_parkir
+            let tarif_awal = 3000
+            let selisih = lama_parkir - 3
+            let result = 0
+
+
+            if (lama_parkir <= 2) {
+                document.getElementById('biaya').value = Math.round(tarif_awal);
+            } else {
+                document.getElementById('biaya').value = Math.round(tarif_awal + (selisih * 1000));
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript 2</title>
+</head>
+
+<body>
+    <h2>Dolar to Rupiah</h2>
+    <form>
+        <label for="dollar">Dolar: </label><input type="text" id="dollar1">
+        <br>
+        <label for="rupiah">Rupiah: </label><input type="text" id="rupiah1">
+        <br>
+        <button type="button" onclick="hitung_dollar()">Hitung</button>
+        <br>
+        <label for="hasil">Hasil: </label><input type="text" id="hasil" disabled>
+    </form>
+    <h2>Rupiah to Dolar</h2>
+    <form>
+        <label for="rupiah">Rupiah: </label><input type="text" id="rupiah2">
+        <br>
+        <label for="dollar">Dollar: </label><input type="text" id="dollar2">
+        <br>
+        <button type="button" onclick="hitung_rupiah()">Hitung</button>
+        <br>
+        <label for="hasil2">Hasil : </label><input type="text" id="hasil2" disabled>
+    </form>
+    <script>
+        function hitung_dollar() {
+            let dollar = document.getElementById('dollar1').value
+            let rupiah = document.getElementById('rupiah1').value
+            document.getElementById('hasil').value = `Rp ${dollar * rupiah}`
+        }
+
+
+
+        function hitung_rupiah() {
+            let dollar = document.getElementById('dollar2').value
+            let rupiah = document.getElementById('rupiah2').value
+            let result = rupiah * (1 / 14650)
+            document.getElementById('hasil2').value = `$ ${result.toFixed(2)}`
+        }
+    </script>
+</body>
+
+</html>
