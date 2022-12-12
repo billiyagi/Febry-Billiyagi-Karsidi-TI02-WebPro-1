@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation - Febry Billiyagi Karsidi (TI 02)</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="flex-column justify-center items-center vh-100">
+        <div class="text-center mb-3">
+            <h1 class="m0">Validasi Form</h1>
+            <p>by <a href="https://github.com/billiyagi">Febry Billiyagi</a></p>
+        </div>
+        <form style="width: 400px;" id="formPesanan">
+            <div class="mb-3 relative">
+                <div class="flex-input">
+                    <label for="pelanggan">Nama Pelanggan</label>
+                    <input type="text" id="pelanggan">
+                </div>
+                <span class="block" style="text-align: right;"></span>
+            </div>
+            <div class="mb-3 relative">
+                <div class="flex-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <span class="block" style="text-align: right;"></span>
+            </div>
+            <div class="mb-3 relative">
+                <div class="flex-input">
+                    <label for="keberangkatan">Waktu Keberangkatan</label>
+                    <input type="time" id="keberangkatan" min="00:00" max="23:59">
+                </div>
+                <span class="block" style="text-align: right;"></span>
+            </div>
+            <div class="mb-3 relative">
+                <div class="flex-input">
+                    <label for="tujuan">Tujuan Keberangkatan</label>
+                    <input type="text" id="tujuan">
+                </div>
+                <span class="block" style="text-align: right;"></span>
+            </div>
+            <div class="mb-3 relative">
+                <div class="flex-input">
+                    <label for="tiket">Jumlah Tiket</label>
+                    <input type="number" id="tiket">
+                </div>
+                <span class="block" style="text-align: right;"></span>
+            </div>
+            <div class="flex justify-end">
+                <button type="button" class="btn" id="btnCheckout">Checkout</button>
+            </div>
+        </form>
+        <div style="width: 400px;" class="hidden" id="hasilPesanan">
+            <hr style="margin-top: 5rem;">
+            <h3 class="text-center">Hasil Pesanan</h3>
+            <hr>
+            <table>
+                <tr>
+                    <td>Nama pelanggan</td>
+                    <td id="hasilPelanggan"></td>
+                </tr>
+                <tr>
+                    <td>Email pelanggan</td>
+                    <td id="hasilEmail"></td>
+                </tr>
+                <tr>
+                    <td>Waktu Keberangkatan</td>
+                    <td id="hasilKeberangkatan"></td>
+                </tr>
+                <tr>
+                    <td>Tujuan Keberangkatan</td>
+                    <td id="hasilTujuan"></td>
+                </tr>
+                <tr>
+                    <td>Tiket</td>
+                    <td id="hasilTiket"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script>
+        const validation = function (pattern, input) {
+            return pattern.test(input)
+        }
+        const validationMessage = function (elemenPlace, status, message = '*kolom wajib diisi') {
+            elemenPlace.parentElement.nextElementSibling.classList.remove('success-validation', 'error-validation')
+            if (status) {
+                elemenPlace.parentElement.nextElementSibling.innerHTML = '<i class="absolute top-0 right-0 fas fa-check success-validation"></i>'
+                elemenPlace.parentElement.nextElementSibling.classList.add('success-validation')
+            } else {
+                elemenPlace.parentElement.nextElementSibling.innerHTML = message
+                elemenPlace.parentElement.nextElementSibling.classList.add('error-validation')
+            }
+        }
+        document.querySelector('#btnCheckout').addEventListener('click', function () {
+            let formPesanan = document.querySelector('#formPesanan')
+            const validationEmailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            let resultsValidation = []
+
+            // Validasi Input Nama Pelanggan
+            if (formPesanan.pelanggan.value != '') {
+                if (formPesanan.pelanggan.value.length >= 30) {
+                    validationMessage(formPesanan.pelanggan, false, '*Nama pelanggan tidak boleh lebih dari 30 karakter')
+                    resultsValidation.push(false)
+                } else {
+                    validationMessage(formPesanan.pelanggan, true,)
+                    resultsValidation.push(true)
+                }
+            } else {
+                validationMessage(formPesanan.pelanggan, false)
+                resultsValidation.push(false)
+            }
+
+            // Validasi Input email pelanggan
+            if (formPesanan.email.value != '') {
+                if (!validationEmailPattern.test(formPesanan.email.value)) {
+                    validationMessage(formPesanan.email, false, '*Alamat email tidak valid')
+                    resultsValidation.push(false)
+                } else {
+                    validationMessage(formPesanan.email, true)
+                    resultsValidation.push(true)
+                }
+            } else {
+                validationMessage(formPesanan.email, false)
+                resultsValidation.push(false)
+            }
+
+            // Validasi Input Keberangkatan
+            if (formPesanan.keberangkatan.value != '') {
+                if (formPesanan.keberangkatan.value >= '00:00' && formPesanan.keberangkatan.value <= '23:59') {
+                    validationMessage(formPesanan.keberangkatan, true)
+                    resultsValidation.push(true)
+                } else {
+                    validationMessage(formPesanan.keberangkatan, false, '*Diluar rentang waktu yang ditentukan')
+                    resultsValidation.push(false)
+                }
+            } else {
+                validationMessage(formPesanan.keberangkatan, false)
+                resultsValidation.push(false)
+            }
+
+            // Validasi input tujuan
+            if (formPesanan.tujuan.value == '') {
+                validationMessage(formPesanan.tujuan, false)
+                resultsValidation.push(false)
+            } else {
+                validationMessage(formPesanan.tujuan, true)
+                resultsValidation.push(true)
+            }
+
+            // Validasi jumlah tiket
+            if (formPesanan.tiket.value != '') {
+                if (formPesanan.tiket.value >= 1 && formPesanan.tiket.value <= 10) {
+                    validationMessage(formPesanan.tiket, true)
+                    resultsValidation.push(true)
+                } else {
+                    validationMessage(formPesanan.tiket, false, '*Hanya dapat 1 hingga 10 tiket saja')
+                    resultsValidation.push(false)
+                }
+            } else {
+                validationMessage(formPesanan.tiket, false)
+                resultsValidation.push(false)
+            }
+
+
+            if (!resultsValidation.includes(false)) {
+                document.querySelector('#hasilPesanan').classList.remove('hidden')
+                document.querySelector('#hasilPelanggan').innerHTML = formPesanan.pelanggan.value
+                document.querySelector('#hasilEmail').innerHTML = formPesanan.email.value
+                document.querySelector('#hasilKeberangkatan').innerHTML = formPesanan.keberangkatan.value
+                document.querySelector('#hasilTujuan').innerHTML = formPesanan.tujuan.value
+                document.querySelector('#hasilTiket').innerHTML = formPesanan.tiket.value
+            }
+        })
+    </script>
+</body>
+
+</html>

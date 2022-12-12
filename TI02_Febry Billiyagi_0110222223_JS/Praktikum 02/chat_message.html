@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Chat Message - Febry Billiyagi Karsidi (TI02)</title>
+</head>
+
+<body>
+    <main>
+        <div class="fixed bottom-0 right-0" style="margin: 20px;">
+            <form>
+                <div class="chatbox" id="chatBox">
+                </div>
+                <div class="flex">
+                    <input type="text" class="input" id="chatInput">
+                    <button type="button" class="btn" id="chatBtn">Kirim</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script>
+        document.querySelector('#chatBtn').addEventListener('click', function () {
+            let chatBox = document.querySelector('#chatBox')
+            let chatInput = document.querySelector('#chatInput')
+
+            if (!chatInput) {
+                chatInput = ''
+            } else {
+                chatBox.innerHTML += `<p> <span style="color: blue">You: </span>${chatInput.value}</p>`
+            }
+
+            chatInput.value = ''
+        })
+    </script>
+</body>
+
+</html>

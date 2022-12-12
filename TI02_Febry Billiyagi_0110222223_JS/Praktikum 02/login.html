@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login Authentication - Febry Billiyagi Karsidi (TI02)</title>
+</head>
+
+<body>
+    <main class="flex justify-center items-center vh-100">
+        <form>
+            <div class="mb-3 text-center">
+                <h2 class="m0">Welcome to Bill-apps!</h2>
+                <p class="m0">by <a href="https://github.com/billiyagi">Febry Billiyagi</a></p>
+            </div>
+            <div class="mb-3">
+                <label for="username">Username</label>
+                <input type="text" id="username">
+            </div>
+            <div class="mb-3">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            <button type="button" class="btn btn-default" id="btnSubmit">Submit</button>
+        </form>
+        <div class="hidden" id="successAuth">
+            <div style="width: 350px; height: 250px; background-color: #ddd; border-radius: 5px;"
+                class="flex justify-center items-center">
+                <h1>Login Berhasil!</h1>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/otentikasi.js"></script>
+</body>
+
+</html>

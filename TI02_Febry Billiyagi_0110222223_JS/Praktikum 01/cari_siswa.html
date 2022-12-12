@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 10.1</title>
+    <style>
+        div {
+            width: 300px;
+            border: 25px solid green;
+            padding: 25px;
+            margin: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="formCari">
+        <label for="cari">Cari siswa</label>
+        <input type="text" name="caris" id="cari">
+        <button type="button" id="prosesCari">Go</button>
+    </form>
+    <hr>
+    <div>Nama yang anda cari : <span id="kata_cari"></span></div>
+    <script>
+        let buttonGo = document.querySelector('#prosesCari')
+
+        buttonGo.addEventListener('click', () => {
+            let formCari = document.querySelector('#formCari')
+            let nama = formCari.cari.value
+
+            if (nama == 'Billy') {
+                document.querySelector('#kata_cari').innerHTML = nama
+                document.querySelector('#kata_cari').style = 'color:blue'
+            }
+        })
+    </script>
+</body>
+
+</html>

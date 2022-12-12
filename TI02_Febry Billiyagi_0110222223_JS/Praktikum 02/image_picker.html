@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Image Picker - Febry Billiyagi Karsidi (TI02)</title>
+</head>
+
+<body>
+    <main class="flex justify-center items-center vh-100">
+        <form>
+            <div class="mb-3 text-center">
+                <h1 class="m0">Image Picker</h1>
+                <p class="m0">by <a href="https://github.com/billiyagi">Febry Billiyagi</a></p>
+            </div>
+            <img src="" width="350px" class="mb-3 m-auto block box-shadow" id="boxImg">
+            <select id="imagePicker" class="input">
+                <option disabled selected>-- Pilih Gambar --</option>
+                <option value="bendera-indonesia">Bendera Indonesia</option>
+                <option value="doraemon">Doraemon</option>
+                <option value="logo-sttnf">Logo STT Terpadu Nurul Fikri</option>
+                <option value="mickey-mouse">Mickey mouse</option>
+                <option value="naruto">Naruto</option>
+                <option value="pemandangan">Sketsa pemandangan</option>
+                <option value="pikachu">Pikachu</option>
+            </select>
+        </form>
+    </main>
+    <script>
+        document.querySelector('#imagePicker').addEventListener('change', function () {
+            let boxImg = document.querySelector('#boxImg')
+            let path = 'assets/img/'
+            switch (this.value) {
+                case 'bendera-indonesia':
+                    boxImg.setAttribute('src', path + 'bendera-indonesia.png')
+                    setTimeout(function () {
+                        alert('Gambar bendera Indonesia')
+                    }, 300)
+                    break;
+                case 'doraemon':
+                    boxImg.setAttribute('src', path + 'doraemon.png')
+                    setTimeout(function () {
+                        alert('Gambar Doraemon')
+                    }, 300)
+                    break;
+                case 'logo-sttnf':
+                    boxImg.setAttribute('src', path + 'logo-sttnf.png')
+                    setTimeout(function () {
+                        alert('Logo dari Kampus kebanggaanku, STT Terpadu Nurulfikri!')
+                    }, 300)
+                    break;
+                case 'mickey-mouse':
+                    boxImg.setAttribute('src', path + 'mickey-mouse.png')
+                    setTimeout(function () {
+                        alert('Gambar Mickey mouse, kartun jadul tahun 90an')
+                    }, 300)
+                    break;
+                case 'naruto':
+                    boxImg.setAttribute('src', path + 'naruto.jpeg')
+                    setTimeout(function () {
+                        alert('Gambar naruto, anime terpopuler sepanjang masa.')
+                    }, 300)
+                    break;
+                case 'pemandangan':
+                    boxImg.setAttribute('src', path + 'pemandangan.jpeg')
+                    setTimeout(function () {
+                        alert('Gambar sketsa pemandangan yang sering kita gambar dulu')
+                    }, 300)
+                    break;
+                case 'pikachu':
+                    boxImg.setAttribute('src', path + 'pikachu.jpeg')
+                    setTimeout(function () {
+                        alert('Gambar pikachu, sikecil imut dan berbahaya')
+                    }, 300)
+                    break;
+
+                default:
+                    alert('Error')
+                    break;
+            }
+        })
+    </script>
+</body>
+
+</html>

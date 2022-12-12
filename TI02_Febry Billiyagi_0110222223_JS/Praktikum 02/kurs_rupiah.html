@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs - Febry Billiyagi Karsidi (TI02)</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main class="flex justify-center items-center vh-100">
+        <form>
+            <div class="mb-3 text-center">
+                <h3 class="m0">Konversi Mata uang Internasional ke Rupiah</h3>
+                <p class="m0">By <a href="https://github.com/billiyagi">Febry Billiyagi</a></p>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="nilaiUangInter" placeholder="Masukan Nilai" class="input">
+            </div>
+            <div class="mb-3">
+                <select id="mataUangInter" class="input">
+                    <option disabled selected>-- Pilih mata uang Internasional --</option>
+                    <option value="us">Dollar US</option>
+                    <option value="singapore">Dollar Singapura</option>
+                    <option value="malay">Ringgit Malaysia</option>
+                    <option value="japan">Yen Japan</option>
+                    <option value="euro">Euro</option>
+                    <option value="arab">Riyal Arab Saudi</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <input type="text" id="rpIndonesia" placeholder="Rupiah Indonesia" class="input" value="Rp. 0" disabled>
+            </div>
+        </form>
+    </main>
+    <script>
+        document.querySelector('#mataUangInter').addEventListener('change', function () {
+            let nilaiUangInter = document.querySelector('#nilaiUangInter').value
+            let result = 0
+            if (!nilaiUangInter) {
+                alert('Mata uang internasional belum terisi.')
+            } else {
+                switch (this.value) {
+                    case 'us':
+                        result = nilaiUangInter * 9915
+                        break;
+                    case 'singapore':
+                        result = nilaiUangInter * 13472
+                        break;
+                    case 'malay':
+                        result = nilaiUangInter * 874
+                        break;
+                    case 'japan':
+                        result = nilaiUangInter * 120
+                        break;
+                    case 'euro':
+                        result = nilaiUangInter * 15888
+                        break;
+                    case 'arab':
+                        result = nilaiUangInter * 3592
+                        break;
+
+                    default:
+                        result = 0
+                        break;
+                }
+
+                document.querySelector('#rpIndonesia').value = `Rp. ${result}`
+            }
+        })
+    </script>
+</body>
+
+</html>

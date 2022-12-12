@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 10.2</title>
+</head>
+
+<body>
+    <h2>Kalkulator</h2>
+    <form>
+        <div>
+            <label for="bilangan1">Bilangan 1</label>
+            <input type="number" id="bilangan1">
+        </div>
+        <br>
+        <div>
+            <label for="bilangan2">Bilangan 2</label>
+            <input type="number" id="bilangan2">
+        </div>
+        <br>
+        <button type="button" id="hitung">Hitung</button>
+    </form>
+    <div>Hasil penjumlahan : <span id="hasil"></span></div>
+    <script>
+        let buttonHitung = document.querySelector('#hitung')
+
+        buttonHitung.addEventListener('click', () => {
+            let bilangan1 = document.querySelector('#bilangan1').value
+            let bilangan2 = document.querySelector('#bilangan2').value
+
+            document.querySelector('#hasil').innerHTML = parseInt(bilangan1) + parseInt(bilangan2)
+        })
+    </script>
+</body>
+
+</html>
