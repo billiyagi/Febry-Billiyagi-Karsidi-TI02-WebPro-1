@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    color: #fff;
+    font-family: "Fira Sans", sans-serif;
+    margin: 0;
+}
+
+#game {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#option {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+a {
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a:hover {
+    color: rgb(181, 0, 0);
+}
+
+/* 
+ * Ensures that the JS code always looks at
+ * the <a> tag when clicked or tapped
+ */
+i {
+    pointer-events: none;
+    touch-action: none;
+}
+
+#computer {
+    text-align: center;
+}
